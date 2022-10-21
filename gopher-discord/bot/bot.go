@@ -18,7 +18,7 @@ type Gopher struct {
 	Name string `json: "name"`
 }
 
-const Kute_go_APIURL = "https://kutego-api-xxxxx-ew.a.run.app"
+const Kute_go_APIURL = "http://localhost:8080"
 
 func Start() {
 
@@ -60,7 +60,7 @@ func messageHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 	if m.Content == "!gopher" {
 
 		//Calling the KuteGo api and get the Dr Who Gopher
-		response, err := http.Get(Kute_go_APIURL + "/gopher/" + "dr-who")
+		response, err := http.Get(Kute_go_APIURL + "/gopher/" + "back-to-the-future-v2")
 		if err != nil {
 			fmt.Println(err)
 		}
