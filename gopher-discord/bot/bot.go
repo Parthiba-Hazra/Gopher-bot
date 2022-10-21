@@ -40,9 +40,6 @@ func Start() {
 
 	bot.AddHandler(messageHandler)
 
-	// we only care about receiving message events.
-	bot.Identify.Intents = discordgo.IntentsGuildMessages
-
 	err = bot.Open()
 
 	if err != nil {
