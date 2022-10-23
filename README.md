@@ -19,7 +19,7 @@ In this project we need to call KuteGoAPI(https://github.com/gaelleacas/kutego-a
 
 ### using docker - 
 
-To ru the bot on docker you need change the Kute_go_APIURL from "http://localhost:8080" to Kute_go_APIURL = "http://host.docker.internal:8080" (in bot/bot.go file) and then build the docker image and run it.
+To run the bot on docker you need change the Kute_go_APIURL from "http://localhost:8080" to Kute_go_APIURL = "http://host.docker.internal:8080" (in bot/bot.go file) and then build the docker image and run it.
 
 ```bash
   docker build -t gopher-discord:1.0 . 
